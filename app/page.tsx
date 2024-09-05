@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import avatarImage from "./images/avatar.png";
 import domainScoreImage from "./images/domainscore.png";
 import interviewImage from "./images/interview.png";
+import legappdoImage from "./images/legappdo.png";
 
 interface BentoCardProps {
   children: ReactNode;
@@ -57,7 +58,7 @@ export default function Portfolio() {
         "Descripción breve del proyecto 1. Este proyecto demuestra mis habilidades en desarrollo frontend.",
       image: interviewImage,
       technologies: ["IA", "Astro", "React", "Next.js", "TypeScript"],
-      previewLink: "https://proyecto1.com",
+      previewLink: "https://www.kahop.com/",
     },
     {
       name: "Domain Score",
@@ -71,7 +72,7 @@ export default function Portfolio() {
       name: "Legappdo",
       description:
         "Descripción breve del proyecto 3. Solución eficiente para problemas complejos de UI/UX.",
-      image: interviewImage,
+      image: legappdoImage,
       technologies: ["Serverless", "Next.js", "TypeScript"],
       previewLink: "https://proyecto3.com",
     },
