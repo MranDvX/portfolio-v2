@@ -17,6 +17,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import avatarImage from "./images/avatar.png";
+import domainScoreImage from "./images/domainscore.png";
+import interviewImage from "./images/interview.png";
 
 interface BentoCardProps {
   children: ReactNode;
@@ -52,27 +54,27 @@ export default function Portfolio() {
 
   const projects = [
     {
-      name: "Proyecto 1",
+      name: "Kahop",
       description:
         "Descripción breve del proyecto 1. Este proyecto demuestra mis habilidades en desarrollo frontend.",
-      image: "/placeholder.svg?height=200&width=200",
-      technologies: ["React", "Next.js", "TypeScript"],
+      image: interviewImage,
+      technologies: ["IA", "Astro", "React", "Next.js", "TypeScript"],
       previewLink: "https://proyecto1.com",
     },
     {
-      name: "Proyecto 2",
+      name: "Domain Score",
       description:
         "Descripción breve del proyecto 2. Una aplicación web innovadora con un diseño moderno.",
-      image: "/placeholder.svg?height=200&width=200",
-      technologies: ["Vue.js", "Nuxt.js", "JavaScript"],
+      image: domainScoreImage,
+      technologies: ["IA", "React", "Next.js", "TypeScript"],
       previewLink: "https://proyecto2.com",
     },
     {
-      name: "Proyecto 3",
+      name: "Legappdo",
       description:
         "Descripción breve del proyecto 3. Solución eficiente para problemas complejos de UI/UX.",
-      image: "/placeholder.svg?height=200&width=200",
-      technologies: ["Angular", "RxJS", "SCSS"],
+      image: interviewImage,
+      technologies: ["Serverless", "Next.js", "TypeScript"],
       previewLink: "https://proyecto3.com",
     },
   ];
@@ -121,7 +123,8 @@ export default function Portfolio() {
       <div className="grid grid-cols-3 gap-4 max-w-4xl w-full">
         <BentoCard className="bg-card col-span-2 flex items-center h-20 p-4">
           <div className="bg-primary text-primary-foreground font-bold text-2xl rounded-xl p-2 mr-4">
-            <span>+7 años</span>
+            <span className="hidden sm:inline">+7 años</span>
+            <span className="sm:hidden">+7</span>
           </div>
           <h2 className="text-foreground text-xl font-semibold">
             Frontend Developer
@@ -138,10 +141,10 @@ export default function Portfolio() {
           />
         </BentoCard>
         <BentoCard
-          className="bg-primary p-4 flex items-center justify-center col-span-2"
+          className="bg-primary xl:py-20 lg:py-16 md:py-16 sm:py-10 flex items-center justify-center col-span-2"
           isWhite={true}
         >
-          <h1 className="text-4xl font-bold text-primary-foreground text-center">
+          <h1 className="text-2xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl font-bold text-primary-foreground text-center">
             Francisco Mancuello
           </h1>
         </BentoCard>
@@ -165,7 +168,7 @@ export default function Portfolio() {
                   }`}
                 >
                   <div className="flex space-x-4">
-                    <div className="relative w-48 h-48 flex-shrink-0">
+                    <div className="relative w-48 h-48 flex-shrink-0 hidden lg:inline">
                       <Image
                         src={project.image}
                         alt={`Preview de ${project.name}`}
@@ -236,7 +239,7 @@ export default function Portfolio() {
             >
               <Linkedin size={32} />
               <span className="text-lg text-center font-semibold mt-2">
-                Francisco Mancuello
+                in/MranDvX
               </span>
             </a>
             <a
@@ -271,7 +274,10 @@ export default function Portfolio() {
           className="bg-primary p-3 flex items-center justify-center"
           isWhite={true}
         >
-          <MapPin className="text-primary-foreground mr-2" size={20} />
+          <MapPin
+            className="text-primary-foreground hidden lg:inline mr-2"
+            size={20}
+          />
           <span className="text-primary-foreground font-semibold">
             Paraguay
           </span>
@@ -283,15 +289,15 @@ export default function Portfolio() {
             aria-label="Copiar correo electrónico"
             className="flex items-center justify-center w-full h-full"
           >
-            <Mail
+            {/* <Mail
               className="text-primary group-hover:text-primary/80 mr-2"
               size={24}
-            />
+            /> */}
             <span className="text-foreground group-hover:underline text-sm">
               franmavazq@gmail.com
             </span>
             <Copy
-              className="text-primary group-hover:text-primary/80 ml-2"
+              className="text-primary group-hover:text-primary/80 ml-2 hidden lg:inline"
               size={20}
             />
           </Button>
@@ -307,7 +313,7 @@ export default function Portfolio() {
         <BentoCard className="bg-card p-4 col-span-3">
           <form className="flex items-center space-x-2">
             <div className="flex items-center text-xl font-bold text-primary whitespace-nowrap mr-2">
-              <Send className="mr-2" size={20} />
+              {/* <Send className="mr-2 " size={20} /> */}
               <span>Newsletter</span>
             </div>
             <Input
