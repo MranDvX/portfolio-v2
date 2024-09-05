@@ -5,10 +5,8 @@ import Image from "next/image";
 import {
   Linkedin,
   Instagram,
-  Mail,
   MapPin,
   Headphones,
-  Send,
   Eye,
   Check,
   Copy,
