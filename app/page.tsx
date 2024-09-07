@@ -90,23 +90,23 @@ export default function Portfolio() {
       tagline: "Plataforma de entrevistas asistida por IA",
       logo: interviewImage,
       previewLink: "https://www.kahop.com/es/pagina-principal/",
-      mrr: 1500,
+      mrr: 0,
       techStack: ["Next.js", "IA", "TypeScript"],
     },
     {
       name: "Domain Score",
       tagline: "Herramienta de análisis de dominios web",
       logo: domainScoreImage,
-      previewLink: "https://domainscore.com/",
-      mrr: 2000,
+      previewLink: "https://mrandvx.com/",
+      mrr: 0,
       techStack: ["Next.js", "IA", "TypeScript"],
     },
     {
       name: "Legappdo",
       tagline: "Aplicación de gestión legal para abogados",
       logo: legappdoImage,
-      previewLink: "https://legappdo.com/",
-      mrr: 1000,
+      previewLink: "https://mrandvx.com/",
+      mrr: 0,
       techStack: ["Next.js", "Serverless", "PosreSQL", "AWS"],
     },
   ];
@@ -177,7 +177,7 @@ export default function Portfolio() {
   };
 
   const totalMRR = projects.reduce((sum, project) => sum + project.mrr, 0);
-  const totalUsers = 16000;
+  const totalUsers = 0;
 
   return (
     <main className="min-h-screen flex items-center justify-center p-4 bg-white text-black">
