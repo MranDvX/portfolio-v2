@@ -23,11 +23,6 @@ export const metadata: Metadata = {
     title: "MranDvX",
     description: "Francisco Mancuello Vazquez - Frontend Developer",
   },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
-  },
   robots: {
     index: true,
     follow: true,
